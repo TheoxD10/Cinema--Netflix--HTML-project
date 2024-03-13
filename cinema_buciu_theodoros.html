@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Theodoros Darius Buciu Cinema Project</title>
+    <style>
+        .featured-button {
+          background-color: blueviolet;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+        }
+      
+        .featured-button:hover {
+          background-color: purple;
+        }
+      </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">Theo's Cinema</h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <li class="menu-list-item"><a href="login.html">Log Out</a></li>
+                <img class="profile-picture" src="IMAGES/user_profile_pic1.webp" alt="">
+                <div class="profile-text-container">
+                    <h1>Welcome, <span class="profile-text" id="name-display"></span>!</h1>
+
+                <script>
+                // Get the username from sessionStorage
+                var username = sessionStorage.getItem("username");
+
+                // Set the username in the display element
+                var nameDisplay = document.getElementById("name-display");
+                nameDisplay.textContent = username;
+                </script>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                    
+                </div>
+            </div>
+                
+        </div>    
+    </div>  
+    <div class="sidebar">
+    </div>  
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('IMAGES/bromania.jpg');"
+            >
+            <img class="featured-title" src="IMAGES/teambuilding.jpg" alt="">
+            <p class="featured-desc">Emil (Matei Dima) works too much. That's what his superiors in the PLM Global corporation blame him for. Thus, to temper his energy, Mr. Oprea (Șerban Pavlu) promotes him "horizontally" and makes him a team leader in the call center department - ungrateful to the corporation, where the unofficial leader is the grumpy Horia (Micutzu). Emil doesn't even get to integrate, because Mr. Oprea comes up with a new proposal: to restructure the entire call center department and replace them with artificial intelligence. Emil offers him a bet: if he brings him the Veseleia Cup, the annual teambuilding cup that has never been won by the people of Bucharest, the eternally victorious Transylvanians, Oprea will keep the department. If not, he kicks them all out. Who will take the cup this year?
+            </p>
+            <button class="featured-button" onclick="openPageInNewTab1()">WATCH</button>
+
+            <script>
+            function openPageInNewTab1()
+            {
+                window.open("featured_content.html", "_blank");
+            }
+            </script>           
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">MOVIES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/1.jpeg" alt="">
+                        <span class="movie-list-item-title">Murder Mistery</span>
+                        <p class="movie-list-item-desc">Comedy or scary movie? About to find out...</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/unlocked.jpg" alt="">
+                        <span class="movie-list-item-title">Unlocked</span>
+                        <p class="movie-list-item-desc">A woman's life is turned upside-down when a dangerous man gets a hold of her lost cell phone and uses it to track her every move.</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/3.jpg" alt="">
+                        <span class="movie-list-item-title">Romina VTM</span>
+                        <p class="movie-list-item-desc">Can you become famous in three months?</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/4.jpg" alt="">
+                        <span class="movie-list-item-title">Kung Fu Panda</span>
+                        <p class="movie-list-item-desc">Kung Fu and a Panda? Find out how he becomes the great master</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/5.jpg" alt="">
+                        <span class="movie-list-item-title">Avangers</span>
+                        <p class="movie-list-item-desc">Watch the best fights you have ever seen!</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/6.jpg" alt="">
+                        <span class="movie-list-item-title">Godzilla</span>
+                        <p class="movie-list-item-desc">How did this monster got here?</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/7.jpg" alt="">
+                        <span class="movie-list-item-title">Somebody that i used to know</span>
+                        <p class="movie-list-item-desc"></p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/8.jpg" alt="">
+                        <span class="movie-list-item-title">Oblivion</span>
+                        <p class="movie-list-item-desc">A veteran assigned to extract Earth's remaining resources 
+                            begins to question what he knows about his mission and himself.</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">POPULAR</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/8.jpg" alt="">
+                        <span class="movie-list-item-title">Oblivion</span>
+                        <p class="movie-list-item-desc">A veteran assigned to extract Earth's remaining resources 
+                            begins to question what he knows about his mission and himself.</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/9.jpg" alt="">
+                        <span class="movie-list-item-title">The Hobbit</span>
+                        <p class="movie-list-item-desc">A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home, and the gold within it from the dragon Smaug.</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/10.jpg" alt="">
+                        <span class="movie-list-item-title">Due Date</span>
+                        <p class="movie-list-item-desc">High-strung father-to-be Peter Highman is forced to hitch a ride with aspiring actor Ethan Tremblay on a road trip in order to make it to his child's birth on time.</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/11.jpg" alt="">
+                        <span class="movie-list-item-title">The 100</span>
+                        <p class="movie-list-item-desc">Set 97 years after a nuclear war destroyed civilization, when a spaceship housing humanity's lone survivors sends 100 juvenile delinquents back to Earth, hoping to repopulate the planet.</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/12.jpg" alt="">
+                        <span class="movie-list-item-title">Emoji Movie</span>
+                        <p class="movie-list-item-desc">Gene, a multi-expressional emoji, sets out on a journey to become a normal emoji.</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/1.jpg" alt="">
+                        <span class="movie-list-item-title">First Love</span>
+                        <p class="movie-list-item-desc">The story is described as a poignant look at a young man's difficult entry into adulthood.</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/1.jpeg" alt="">
+                        <span class="movie-list-item-title">Murder Mistery</span>
+                        <p class="movie-list-item-desc">Comedy or scary movie? About to find out...</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/unlocked.jpg" alt="">
+                        <span class="movie-list-item-title">Unlocked</span>
+                        <p class="movie-list-item-desc">A woman's life is turned upside-down when a dangerous man gets a hold of her lost cell phone and uses it to track her every move.</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="IMAGES/3.jpg" alt="">
+                        <span class="movie-list-item-title">Romina VTM</span>
+                        <p class="movie-list-item-desc">Can you become famous in three months?</p>
+                        <button class="movie-list-item-button">WATCH</button>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="featured-content"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('IMAGES/f-2.jpg');">
+        <img class="featured-title" src="IMAGES/f-t-2.png" alt="">
+        <p class="featured-desc">A missing child sets four families on a frantic hunt for answers as they unearth a mind-bending mystery that spans three generations.</p>
+        <button class="featured-button" onclick="openPageInNewTab2()">WATCH</button>
+        <script>
+            function openPageInNewTab2()
+            {
+                window.open("featured_content2.html", "_blank");
+            }
+            </script>   
+    </div>
+    <div class="movie-list-container">
+        <h1 class="movie-list-title">TRENDS</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/1.jpeg" alt="">
+                    <span class="movie-list-item-title">Murder Mistery</span>
+                    <p class="movie-list-item-desc">Comedy or scary movie? About to find out...</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/unlocked.jpg" alt="">
+                    <span class="movie-list-item-title">Unlocked</span>
+                    <p class="movie-list-item-desc">A woman's life is turned upside-down when a dangerous man gets a hold of her lost cell phone and uses it to track her every move.</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/3.jpg" alt="">
+                    <span class="movie-list-item-title">Romina VTM</span>
+                    <p class="movie-list-item-desc">Can you become famous in three months?</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/4.jpg" alt="">
+                    <span class="movie-list-item-title">Kung Fu Panda</span>
+                    <p class="movie-list-item-desc">Kung Fu and a Panda? Find out how he becomes the great master</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/5.jpg" alt="">
+                    <span class="movie-list-item-title">Avangers</span>
+                    <p class="movie-list-item-desc">Watch the best fights you have ever seen!</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/6.jpg" alt="">
+                    <span class="movie-list-item-title">Godzilla</span>
+                    <p class="movie-list-item-desc">How did this monster got here?</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/7.jpg" alt="">
+                    <span class="movie-list-item-title">Somebody that i used to know</span>
+                    <p class="movie-list-item-desc"></p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/8.jpg" alt="">
+                    <span class="movie-list-item-title">Oblivion</span>
+                    <p class="movie-list-item-desc">A veteran assigned to extract Earth's remaining resources 
+                        begins to question what he knows about his mission and himself.</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>
+    <div class="movie-list-container">
+        <h1 class="movie-list-title">NEW RELEASES</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/8.jpg" alt="">
+                    <span class="movie-list-item-title">Oblivion</span>
+                    <p class="movie-list-item-desc">A veteran assigned to extract Earth's remaining resources 
+                        begins to question what he knows about his mission and himself.</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/9.jpg" alt="">
+                    <span class="movie-list-item-title">The Hobbit</span>
+                    <p class="movie-list-item-desc">A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home, and the gold within it from the dragon Smaug.</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/10.jpg" alt="">
+                    <span class="movie-list-item-title">Due Date</span>
+                    <p class="movie-list-item-desc">High-strung father-to-be Peter Highman is forced to hitch a ride with aspiring actor Ethan Tremblay on a road trip in order to make it to his child's birth on time.</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/11.jpg" alt="">
+                    <span class="movie-list-item-title">The 100</span>
+                    <p class="movie-list-item-desc">Set 97 years after a nuclear war destroyed civilization, when a spaceship housing humanity's lone survivors sends 100 juvenile delinquents back to Earth, hoping to repopulate the planet.</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/12.jpg" alt="">
+                    <span class="movie-list-item-title">Emoji Movie</span>
+                    <p class="movie-list-item-desc">Gene, a multi-expressional emoji, sets out on a journey to become a normal emoji.</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/1.jpg" alt="">
+                    <span class="movie-list-item-title">First Love</span>
+                    <p class="movie-list-item-desc">The story is described as a poignant look at a young man's difficult entry into adulthood.</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/1.jpeg" alt="">
+                    <span class="movie-list-item-title">Murder Mistery</span>
+                    <p class="movie-list-item-desc">Comedy or scary movie? About to find out...</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/unlocked.jpg" alt="">
+                    <span class="movie-list-item-title">Unlocked</span>
+                    <p class="movie-list-item-desc">A woman's life is turned upside-down when a dangerous man gets a hold of her lost cell phone and uses it to track her every move.</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="IMAGES/3.jpg" alt="">
+                    <span class="movie-list-item-title">Romina VTM</span>
+                    <p class="movie-list-item-desc">Can you become famous in three months?</p>
+                    <button class="movie-list-item-button">WATCH</button>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>
+</div>
+</div>
+<script src="app.js"></script>
+</body>
+
+</html>

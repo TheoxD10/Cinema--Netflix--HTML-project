@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Theodoros Darius Buciu Cinema Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .container {
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .content-container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* Set the aspect ratio of the video (16:9) */
+      width: 80%;
+      max-width: 800px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    h1 {
+      color: white;
+      font-size: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="background-image" src="IMAGES/f-2.jpg" alt="Background Image">
+    <div class="content-container">
+      <h1>DARK</h1>
+      <iframe width="1080" height="720" src="https://www.youtube.com/embed/ESEUoa-mz2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>
